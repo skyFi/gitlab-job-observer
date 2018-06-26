@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+  </head>
+  <body style="-webkit-app-region: drag;">
+    <h1>Hello World!</h1>
+    We are using node <script>document.write(process.versions.node)</script>,
+    Chrome <script>document.write(process.versions.chrome)</script>,
+    and Electron <script>document.write(process.versions.electron)</script>.
+
+    <script>
+      const axios = require('axios');
+      const _ = require('lodash');
+
+      const instance = axios.create({
+        baseURL: 'http://code.smartstudy.com/api/v4',
+        timeout: 1000,
+        headers: {'Private-Token': 'i8V23h7zVT7fhc1hgHvt'}
+      });
+
+    </script>
+  </body>
+</html>
