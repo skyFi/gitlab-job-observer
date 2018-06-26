@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "6f0a3b4d53da511714dd"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "e7b00a4fd9e6add95c62"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -22950,12 +22950,11 @@
 	    _classCallCheck(this, App);
 
 	    _get(Object.getPrototypeOf(App.prototype), 'constructor', this).call(this, props);
-
-	    // let privateToken = electron.require('./lib/var').getPrivateToken() || 'i8V23h7zVT7fhc1hgHvt';
 	    var privateToken = electron.require('./lib/var').getPrivateToken();
 	    if (!privateToken) {
 	      try {
 	        privateToken = localStorage.getItem('privateToken');
+	        electron.require('./lib/var').setPrivateToken(privateToken);
 	      } catch (error) {
 	        console.error(error);
 	      }

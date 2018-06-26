@@ -9,6 +9,7 @@ export default class App extends Component {
     if (!privateToken) {
       try {
         privateToken = localStorage.getItem('privateToken');
+        electron.require('./lib/var').setPrivateToken(privateToken);
       } catch (error) {
         console.error(error);
       }
