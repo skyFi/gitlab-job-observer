@@ -12,4 +12,7 @@
 
 OK！
 
-> tip: [如果获取 Gitlab Private Token](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html)
+> tip: 
+>
+> 1. [如何获取 Gitlab Private Token](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html)
+> 2. MAC [程序地址](./GitlabJobObserver/GitlabJobObserver-darwin-x64)目录下的 `/GitlabJobObserver.app`，其他平台的请根据 `packager`自行生成。
